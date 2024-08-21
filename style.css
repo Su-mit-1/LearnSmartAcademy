@@ -1,0 +1,331 @@
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+      
+      /* Header and Navigation */
+    header {
+        background: #3D52A0;
+        color: #fff;
+        height: 70px;
+        padding: 0;
+    }
+    header nav {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      margin-right: 20px;
+    }
+    
+    .logo img {
+      width: 70px; /* adjust the width to your logo size */
+      height: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+       /* display: inline;*/
+        margin-right: 20px;
+    }
+    nav ul li:not(:last-child) {
+      border-right: 2px solid #ccc;
+      padding-right: 10px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+      /* Hero Section */
+      #home {
+        position: relative;
+        background-image: url('images/background.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* adjust the height to your liking */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+      #home h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #00BFFF; /* light blue */
+      }
+      #home p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      #home button {
+        background: #3D52A0; /* bright blue */
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      #home button a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      /* Courses Section */
+      #courses {
+        padding: 20px;
+        background: #fff;
+        font-size: medium;
+      }
+      #courses h2{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #006BB4; /* dark blue */
+      }
+      #courses h3{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #006BB4; /* dark blue */
+      }
+      .course-list {
+        display: flex;
+        justify-content: space-around;
+      }
+      .course-item {
+        background: #90c6ef;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+      }
+      .course-item h3 {
+        margin-bottom: 10px;
+        color: #00BFFF; /* light blue */
+      }
+      
+      /* About Section */
+      #about {
+        padding: 20px;
+        background: #e2e2e2;
+        text-align: center;
+      }
+      #about h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #006BB4; /* dark blue */
+      }
+      #about img {
+      width: 30%; /* adjust the width to your liking */
+      height: auto;
+      margin: 10px;
+      display: inline-block; /* add this to make images display side by side */
+      object-fit: cover;
+    }
+      
+      /* Services Section */
+      #services {
+        background-color: #f7f7f7;
+        padding: 20px;
+        text-align: center;
+      }
+      #services h2 {
+        margin-top: 0;
+        color: #006BB4; /* dark blue */
+      }
+      #services ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      #services li {
+        margin-bottom: 10px;
+      }
+      #services a {
+        color: #009FD8; /* bright blue */
+        text-decoration: none;
+      }
+      #services img {
+      width: 30%; /* adjust the width to your liking */
+      height: auto;
+      margin: 10px;
+      display: inline-block; /* add this to make images display side by side */
+      object-fit: cover;
+    }
+      
+      /* Testimonials Section */
+      #testimonials {
+        background-color: #e2e2e2;
+        padding: 20px;
+        text-align: center;
+      }
+      #testimonials h2 {
+        margin-top: 0;
+        color: #006BB4; /* dark blue */
+      }
+      #testimonials ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      #testimonials li {
+        margin-bottom: 20px;
+      }
+      #testimonials p {
+        font-size: 18px;
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #00BFFF; /* light blue */
+      }
+      
+    /* CSS3 Styles */
+    /* Transitions */
+    #services a, #testimonials a {
+      transition: color 0.2s ease-in-out;
+    }
+    
+    /* Transforms */
+    #testimonials img {
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    #testimonials img:hover {
+      transform: scale(1.2);
+    }
+    
+    /* Rounded Corners */
+    #services ul, #testimonials ul {
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Opacity */
+    #services, #testimonials {
+      opacity: 0.9;
+      transition: opacity 0.2s ease-in-out;
+    }
+    
+    #services:hover, #testimonials:hover {
+      opacity: 1;
+    }
+    
+    /* Shadows */
+    #services, #testimonials, #courses, #contact {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Gradients */
+    #services, #testimonials, #courses, #contact {
+      background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    }
+      
+      /* Contact Section */
+      #contact {
+        padding: 20px;
+        background: #fff;
+        text-align: center;
+      }
+      #contact h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #006BB4; /* dark blue */
+      }
+      #contact ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      #contact li {
+        margin-bottom: 10px;
+      }
+      #contact a {
+        color: #009FD8; /* bright blue */
+        text-decoration: none;
+      }
+      #contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+        background: e2e2e2;
+    }
+    
+    #contact-form label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    #contact-form input, #contact-form textarea {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    #contact-form button[type="submit"] {
+        background: #3D52A0;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #form-response {
+        color: #666;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    /* Footer */
+    footer {
+        background: #3D52A0;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .back-to-top-arrow {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .back-to-top-arrow:hover {
+      background-color: #444;
+    }
+    
+    /* Responsive Styles */
+    @media(max-width: 768px) {
+        .course-list {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .course-item {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }

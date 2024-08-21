@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSmart Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="/images/logo.PNG" alt="Logo">
+          </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+          <h1>Welcome to LearnSmart Academy</h1>
+          <p>Unlock your potential with our online education that were previously closed, bridging gaps across continents and cultures.</p>
+          <button><a href="#courses">Explore Courses</a></button>
+        </div>
+      </section>
+
+    <section id="courses">
+        <h2><u>Our Courses</u></h2>
+        <div class="course-list">
+            <div class="course-item">
+                <h3>Web Development</h3>
+                <p>Learn to build websites with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="course-item">
+                <h3>Data Science</h3>
+                <p>Explore the world of data with Python and machine learning.</p>
+            </div>
+            <div class="course-item">
+                <h3>Graphic Design</h3>
+                <p>Master the art of visual communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2><u>About Us</u></h2>
+        <p>We are committed to providing the best online education experience, offering a wide range of courses that cater to various interests and skill levels. Transform Your Learning Experience and Join millions of learners worldwide.<br> Discover the power of online education today</p>
+        <div>
+        <a href="images/0.jpg"><img src="/images/0.jpg" alt="Education Image"></a>
+        <a href="images/education.png"><img src="/images/education.png" alt="Education Image"></a>
+        <a href="images/2.jpg"><img src="/images/2.jpg" alt="Education Image"></a>
+    </div>
+
+    </section>
+    <section id="services">
+        <h2><u>Our Services</u></h2>
+        <p>We offer a range of services to help you achieve your learning goals.</p>
+        <ul>
+          <a href="#">Online Courses</a> | <a href="#">Workshops</a> | </li><a href="#">Consulting Services</a>
+          <div>
+            <a href="images/workshop1.jpg"><img src="/images/workshop1.jpg" alt="Workshop Image"></a>
+            <a href="images/workshop2.jpg"><img src="/images/workshop2.jpg" alt="Workshop Image"></a>
+            <a href="images/workshop3.jpg"><img src="/images/workshop3.jpg" alt="Workshop Image"></a>
+            <br><br>
+            <video height="240" controls controls autoplay muted>>
+                <source src="videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+          
+        </ul>
+      </section>
+      <section id="testimonials">
+        <h2>What Our Customers Say<br>Don't just take our word for it - Hear from our satisfied customers!</h2>
+        <ul>
+          <li>
+            <blockquote><img src="images/icon_comment.png" alt="Comment logo">"I learned so much from the online course! The instructors were knowledgeable and supportive."</blockquote>
+             <p> -John Doe</p>
+          </li>
+          <hr/>
+          <li>
+            <blockquote><img src="images/icon_comment.png" alt="Comment logo">"The workshop was engaging and informative. I would highly recommend it to anyone!"</blockquote>
+            <p>-Jane Smith</p>
+          </li>
+        </ul>
+      </section>
+    <section id="contact">
+        <h2><u>Contact Us</u></h2>
+        <p>Get in touch with us through email, social media, or by filling out the form below.</p>
+
+        <ul>
+            <li><a href="mailto:info@onlineeducationplatform.com"><img src="images/icon_mail.png" alt="email logo">Email</a></li>
+            <li><a href="https://www.facebook.com/onlineeducationplatform">Facebook</a></li>
+            <li><a href="https://www.twitter.com/onlineeducationplatform">Twitter</a></li>
+        </ul>
+
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="form-response"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LearnSmart Academy. All Rights Reserved. <span style="float: right; margin-right: 20px;">Back to Top <a href="#home" class="back-to-top-arrow">↑</a></span></p>
+      </footer>
+    <script>
+        // JavaScript form validation and submission handling
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // validate form data
+            if (name === '' || email === '' || message === '') {
+                document.getElementById('form-response').innerHTML = 'Please fill out all fields.';
+                return;
+            }
+
+            // submit form data to server-side script (e.g. PHP, Node.js)
+            // for now, just display a success message
+            document.getElementById('form-response').innerHTML = 'Thank you for your message! We will get back to you shortly.';
+             // Clear the form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+        });
+    </script>
+</body>
+</html>
